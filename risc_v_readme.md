@@ -64,7 +64,8 @@ gtkwave is optional and may not be in base repos. If needed:
 sudo dnf install -y gtkwave
 ```
 
-<img width="840" height="600" alt="Base Dependencies Installation" src="https://github.com/user-attachments/assets/base-deps-install.png" />
+<img width="1366" height="768" alt="step 1" src="https://github.com/user-attachments/assets/1188366d-9f14-4c73-9a75-44d6344e018e" />
+
 
 ### Step 2: Create a clean workspace and capture your home path
 
@@ -76,10 +77,8 @@ pwd=$PWD
 mkdir -p riscv_toolchain
 cd riscv_toolchain
 ```
+<img width="1366" height="768" alt="step2" src="https://github.com/user-attachments/assets/904da785-086f-4735-aa08-baebb30c3d3a" />
 
-<img width="700" height="380" alt="Workspace Creation" src="https://github.com/user-attachments/assets/workspace-creation.png" />
-
-<img width="800" height="260" alt="Directory Navigation" src="https://github.com/user-attachments/assets/directory-nav.png" />
 
 ### Step 3: Download and Extract Prebuilt RISC-V GCC Toolchain
 
@@ -89,8 +88,6 @@ This provides the special RISC-V C compiler ("riscv64-unknown-elf-gcc").
 wget "https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14.tar.gz"
 tar -xvzf riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14.tar.gz
 ```
-
-<img width="950" height="270" alt="Toolchain Download" src="https://github.com/user-attachments/assets/toolchain-download.png" />
 
 ### Step 4: Add the Toolchain to Your PATH
 
@@ -129,7 +126,7 @@ sudo dnf update -y
 sudo dnf install -y texinfo gperf
 ```
 
-Then we gave the actual command and successfully installed it.
+Then we gave this command to install dtc and successfully installed it.
 
 ```bash
 sudo dnf install -y dtc
@@ -183,7 +180,7 @@ riscv64-unknown-elf-objdump --version
 
 ### Step 7: Build and install the RISC‑V Proxy Kernel (riscv-pk)
 
-Lets Spike run your compiled programs. We got some errors in this part of the installation while cloning to the git hub link.
+We got some errors in this part of the installation while cloning to the git hub link.
 
 ```bash
 cd $pwd/riscv_toolchain
@@ -238,7 +235,7 @@ make -j$(nproc)
 sudo make install
 ```
 
-<img width="870" height="480" alt="Icarus Verilog Installation" src="https://github.com/user-attachments/assets/icarus-install.png" />
+![verilog pic](https://github.com/user-attachments/assets/6dc39887-e5b6-4ea8-9d7f-8960fa554cb6)
 
 ### Step 10: Quick Sanity Checks
 
@@ -254,15 +251,17 @@ which pk
 
 - **For gcc location confirmation**
 
-<img width="980" height="330" alt="GCC Location Confirmation" src="https://github.com/user-attachments/assets/gcc-location-confirm.png" />
+![gcc confirmation](https://github.com/user-attachments/assets/130975ff-515a-4564-bc26-0a7bb78cf9e8)
+
 
 - **For spike confirmation**
 
 Got error in **spike --version** as it was not accepting this command so used this command **git log --l** to get version details
 
-<img width="940" height="280" alt="Spike Version Check" src="https://github.com/user-attachments/assets/spike-version-check.png" />
+![spike confirmation](https://github.com/user-attachments/assets/1f9ae4f0-1e64-4561-b72d-899af26d8f35)
 
-<img width="960" height="290" alt="Proxy Kernel Confirmation" src="https://github.com/user-attachments/assets/pk-confirmation.png" />
+- **For proxy kernel confirmation**
+  ![pk confirmation](https://github.com/user-attachments/assets/83a53f30-8d9e-423d-a8be-7457620fe6ab)
 
 ## 🧪 Uniqueness Test
 

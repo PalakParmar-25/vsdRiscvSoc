@@ -2,7 +2,7 @@
 
 [![RISC-V](https://img.shields.io/badge/Architecture-RISC--V-blue.svg)](https://riscv.org/)
 [![Toolchain](https://img.shields.io/badge/Toolchain-RISC--V%20GCC-blueviolet.svg)]()
-[![Rocky Linux](https://img.shields.io/badge/Platform-Rocky%20Linux%208.3-10B981.svg)](https://rockylinux.org/)
+[![Rocky Linux](https://img.shields.io/badge/Platform-Rocky%20Linux%208.10-10B981.svg)](https://rockylinux.org/)
 [![Status](https://img.shields.io/badge/Status-✅%20Complete-success.svg)]()
 
 A comprehensive guide for setting up a complete RISC-V development toolchain on Rocky Linux 8.3 with detailed troubleshooting and solutions for common issues.

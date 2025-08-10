@@ -316,6 +316,7 @@ riscv-task2-<username>/
 ├── bitops_main_objdump.txt
 ├── bubble_sort.c
 ├── bubble_sort.s
+├── task 2 photos.docx
 └── bubble_sort_main_objdump.txt
 ``
 

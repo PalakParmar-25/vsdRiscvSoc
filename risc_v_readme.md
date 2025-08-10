@@ -322,7 +322,8 @@ Run the program in spike:
 spike pk ./unique_test
 ```
 
-<img width="920" height="360" alt="Unique Test Execution" src="https://github.com/user-attachments/assets/unique-test-execution.png" />
+![unique id](https://github.com/user-attachments/assets/e9cb781c-1acd-49cb-8adf-cd111dcf5738)
+
 
 ### 🎯 Unique ID Results
 
